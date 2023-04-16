@@ -1,6 +1,6 @@
 const startButton = document.querySelector(".start_btn");
 const openButton = document.querySelector(".modal_btn");
-const closButton = document.querySelector(".close_btn");
+const closeButton = document.querySelector(".close_btn");
 const shareButton = document.querySelector(".share_btn");
 
 const result = document.querySelector(".result");
@@ -53,20 +53,19 @@ window.onclick = function(event){
     }
 }
 
+// execCommand() 는 이미 사장됨... 따라서 Clipboard API 로 변경
 function copyUrl(){
-    let url = window.location.href;
-    let tmp = document.createElement('input');
-
-    document.body.appendChild(tmp);
-    tmp.value = url;
-    tmp.select();
-    document.execCommand("copy");
-    document.body.removeChild(tmp);
-
-    alert("URL이 복사되었습니다.");
+    const url = window.location.href
+    navigator.clipboard.writeText(url)
+    .then(() => {
+        alert("url을 복사했습니다")
+    })
+    .catch(err =>{
+        alert("url을 복사하는데 실패했습니다." + err)
+    });
 }
 
-shareButton.addEventListner('click', copyUrl);
-openButton.addEventListner('click', openModal);
-closButton.addEventListner('click', closeModal);
-startButton.addEventListner('click', calculator);
+shareButton.addEventListener('click', copyUrl);
+openButton.addEventListener('click', openModal);
+closeButton.addEventListener('click', closeModal);
+startButton.addEventListener('click', calculator);
