@@ -1,0 +1,21 @@
+{
+  "background_color": "#ffffff",
+  "description": "That is a calculating program to be pro",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "10000hours",
+  "orientation": "portrait",
+  "scope": "/",
+  "short_name": "ruleoftime",
+  "start_url": "/akakss225.github.io/pwastudy/",
+  "theme_color": "#ffffff",
+  "categories": [],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "img/favicon.ico"
+    }
+  ],
+  "shortcuts": [],
+  "lang": "ko"
+}
