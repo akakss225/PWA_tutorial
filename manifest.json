@@ -447,7 +447,7 @@
     {
       "src": "ios/192.png",
       "sizes": "192x192",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
       "src": "ios/256.png",
