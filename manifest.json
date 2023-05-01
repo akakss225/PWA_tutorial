@@ -386,7 +386,8 @@
     },
     {
       "src": "ios/58.png",
-      "sizes": "58x58"
+      "sizes": "58x58",
+      "purpose": "any"
     },
     {
       "src": "ios/60.png",
