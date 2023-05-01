@@ -107,9 +107,8 @@
     <script type="text/javascript" src="js/10000hours.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register(
-                '/pwabuilder-sw.js'
-            );
+            navigator.serviceWorker
+            .register('./pwabuilder-sw.js');
         }
     </script>
 </body>
