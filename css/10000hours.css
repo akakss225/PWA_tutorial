@@ -391,6 +391,10 @@ button {
         margin-bottom: 10px;
     }
 
+    .inputs .time > input {
+        margin-bottom: 10px;
+    }
+
     button {
         font-size: 14px;
         padding: 10px 20px;
@@ -582,6 +586,10 @@ button {
         margin-bottom: 20px;
     }
 
+    .inputs .time > input {
+        margin-bottom: 20px;
+    }
+
     button {
         font-size: 15px;
         padding: 10px 25px;
@@ -754,6 +762,10 @@ button {
         margin-bottom: 20px;
     }
     
+    .inputs .time > input {
+        margin-bottom: 20px;
+    }
+
     button {
         font-size: 18px;
         border-radius: 30px;
